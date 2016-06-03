@@ -81,5 +81,10 @@ target/
 #tmp file
 *.tmp
 *.log
+*_tmp
 
 *.retry
+db
+
+#IDE
+.idea
