@@ -88,3 +88,5 @@ db
 
 #IDE
 .idea
+
+*.csv

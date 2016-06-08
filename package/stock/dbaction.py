@@ -169,8 +169,8 @@ def qGetAllStockByCategoryType(value):
     trecord = [value,]
     curs.execute('''select a.stockid from stockMaster as a
                     inner join stockCategoryType as c
-                    on a.stockcategoryTypeid = c.categoryTypeid
-                    where c.categorytypeid = ? ''',trecord)
+                    on a.stockindustrytypeid = c.categoryTypeid
+                    where c.categoryTypeid = ? ''',trecord)
     row = curs.fetchall()
     for i in row :
         data.append(str(i[0]))
